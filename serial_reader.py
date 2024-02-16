@@ -15,7 +15,7 @@ while True:
 
     filename_part = line.replace(" ", "-")
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
-    filename = f"{filename_part}_{timestamp}.txt"
+    filename = f"{timestamp}_{filename_part}.txt"
 
     with open(filename, 'w') as f:
         f.write(line)
